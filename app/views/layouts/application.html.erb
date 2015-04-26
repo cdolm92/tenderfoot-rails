@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tenderfoot | an interactive news app for kids</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="header">
+      <div class="container">
+       <div class="nav">
+            <ul>
+              <a href="#"><li>Hello</li></a>
+               <a href="#"><li>About</li></a>
+               <a href="#"><li>Hello</li></a>
+               <a href="#"><li>Blog</li></a>
+               <a href="#"><li>Contact</li></a>
+            </ul>
+        </div>
+        <div class="logo">
+        <a href="#">Tenderfoot</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+    <ul>
+        <li><%= image_tag "innovationcloud.png", class: 'img-responsive' %></li>
+        <li><%= image_tag "adoptly.png", class: 'img-responsive' %></li>
+        <li><%= image_tag "junction.png", class: 'img-responsive'%></li>
+    </ul>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
